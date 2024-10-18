@@ -11,10 +11,9 @@ df = pd.read_csv("spotify.csv")
 df.set_index("Track", inplace=True)
 
 # título
-st.title("Quantidade de :blue[Likes] :sunglasses:")
+st.title("Quantidade de :blue[Likes] no YouTube :sunglasses:")
 
 # botao para selecionar o artista
-# artista = st.sidebar.selectbox("Artista: ", df["Artist"].unique())
 artista = st.selectbox("Artista: ", df["Artist"].unique())
 
 # checkbox
